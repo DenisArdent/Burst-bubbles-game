@@ -1,0 +1,17 @@
+[versions]
+compose-plugin = "1.6.11"
+kotlin = "2.0.20"
+decompose = "3.1.0"
+serialization = "1.7.3"
+
+
+[libraries]
+arkivanov-decompose = { group = "com.arkivanov.decompose", name = "decompose", version.ref = "decompose" }
+arkivanov-decompose-compose = { group = "com.arkivanov.decompose", name = "extensions-compose", version.ref = "decompose" }
+kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+
+[plugins]
+jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
